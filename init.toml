@@ -106,9 +106,11 @@ name = "chinese"
 
 [[custom_plugins]]
 name="icymind/NeoSolarized"
+merged = false
 
 [[custom_plugins]]
 name="junegunn/vim-easy-align"
+merged = false
 
 # [[custom_plugins]]
 # name="xuhdev/vim-latex-live-preview"

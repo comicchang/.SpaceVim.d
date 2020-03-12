@@ -26,6 +26,7 @@
     default_indent = 4
     bootstrap_before = "myspacevim#before"
     bootstrap_after= "myspacevim#after"
+    snippet_engine = "ultisnips"
 
 # Enable autocomplete layer
 [[layers]]

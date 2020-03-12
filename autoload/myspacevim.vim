@@ -76,6 +76,10 @@ function! myspacevim#before() abort
     
     let g:NERDSpaceDelims=1
 
+    let g:UltiSnipsExpandTrigger = '<tab>'
+    let g:UltiSnipsJumpForwardTrigger = '<tab>'
+    let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
 endfunction
 
 function! myspacevim#after() abort

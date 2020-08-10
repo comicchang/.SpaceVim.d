@@ -27,8 +27,21 @@
     bootstrap_before = "myspacevim#before"
     bootstrap_after= "myspacevim#after"
     snippet_engine = "ultisnips"
+    project_rooter_patterns = ["Pipfile", ".repo/", ".git/"]
 
 # Enable autocomplete layer
+[[layers]]
+name = "core#banner"
+
+[[layers]]
+name = "core#statusline"
+
+[[layers]]
+name = "core#tabline"
+
+[[layers]]
+name = "core"
+
 [[layers]]
 name = 'autocomplete'
 auto-completion-return-key-behavior = "smart"
@@ -45,20 +58,26 @@ name = "format"
 [[layers]]
 name = "ui"
 
-#[[layers]]
-#name = "tools#dash"
+[[layers]]
+name = "tools"
 
 [[layers]]
 name = "tmux"
 
 #[[layers]]
-#name = "debug"
+#name = "lsp"
+#filetypes = [
+#    "python",
+#    "c",
+#    "cpp"
+#]
 
 [[layers]]
-name = "lsp"
+name = "gtags"
+gtagslabel = "pygments"
 
-#[[layers]]
-#name = "VersionControl"
+[[layers]]
+name = "cscope"
 
 [[layers]]
 name = "git"
@@ -75,9 +94,6 @@ name = "lang#python"
 [[layers]]
 name = "lang#dockerfile"
 
-#[[layers]]
-#name = "lang#javascript"
-
 [[layers]]
 name = "lang#matlab"
 
@@ -87,14 +103,14 @@ name = "lang#latex"
 [[layers]]
 name = "lang#markdown"
 
-#[[layers]]
-#name = "lang#html"
-
 [[layers]]
 name = "lang#sh"
 
 [[layers]]
 name = "lang#c"
+
+[[layers]]
+name = "lang#java"
 
 [[layers]]
 name = "lang#vim"
@@ -112,6 +128,3 @@ merged = false
 [[custom_plugins]]
 name="junegunn/vim-easy-align"
 merged = false
-
-# [[custom_plugins]]
-# name="xuhdev/vim-latex-live-preview"

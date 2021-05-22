@@ -27,6 +27,8 @@
     bootstrap_before = "myspacevim#before"
     bootstrap_after= "myspacevim#after"
     snippet_engine = "ultisnips"
+    #enable_ycm = true
+    autocomplete_method = "coc"
     project_rooter_patterns = ['.repo/', '.git/', '_darcs/', '.hg/', '.bzr/', '.svn/']
 
 # Enable autocomplete layer
@@ -58,9 +60,6 @@ name = "format"
 [[layers]]
 name = "ui"
 
-#[[layers]]
-#name = "tools#dash"
-
 [[layers]]
 name = "tools"
 
@@ -70,13 +69,16 @@ name = "tmux"
 #[[layers]]
 #name = "debug"
 
-#[[layers]]
-#name = "lsp"
-#filetypes = [
-#    "python",
-#    "c",
-#    "cpp"
-#]
+[[layers]]
+name = "lsp"
+filetypes = [
+# "python",
+    "c",
+    "cpp"
+]
+[layers.override_cmd]  
+c = ["clangd", "--limit-results=5"]  
+cpp = ["clangd", "--limit-results=5"]  
 
 #[[layers]]
 #name = "VersionControl"
@@ -90,14 +92,8 @@ name = "fzf"
 [[layers]]
 name = "sudo"
 
-#[[layers]]
-#name = "lang#python"
-
-#[[layers]]
-#name = "lang#dockerfile"
-
-#[[layers]]
-#name = "lang#javascript"
+[[layers]]
+name = "lang#python"
 
 #[[layers]]
 #name = "lang#matlab"
@@ -107,9 +103,6 @@ name = "sudo"
 
 #[[layers]]
 #name = "lang#markdown"
-
-#[[layers]]
-#name = "lang#html"
 
 [[layers]]
 name = "lang#java"
@@ -151,6 +144,10 @@ merged = false
 
 [[custom_plugins]]
 name="junegunn/vim-easy-align"
+merged = false
+
+[[custom_plugins]]
+repo = "rhysd/vim-clang-format"
 merged = false
 
 # [[custom_plugins]]

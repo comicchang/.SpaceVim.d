@@ -27,23 +27,9 @@
     bootstrap_before = "myspacevim#before"
     bootstrap_after= "myspacevim#after"
     snippet_engine = "ultisnips"
-    #enable_ycm = true
-    autocomplete_method = "coc"
     project_rooter_patterns = ['.repo/', '.git/', '_darcs/', '.hg/', '.bzr/', '.svn/']
 
 # Enable autocomplete layer
-[[layers]]
-name = "core#banner"
-
-[[layers]]
-name = "core#statusline"
-
-[[layers]]
-name = "core#tabline"
-
-[[layers]]
-name = "core"
-
 [[layers]]
 name = 'autocomplete'
 auto-completion-return-key-behavior = "smart"
@@ -51,7 +37,7 @@ auto-completion-tab-key-behavior = "smart"
 
 [[layers]]
 name = 'shell'
-default_position = 'top'
+default_position = 'bottom'
 default_height = 30
 
 [[layers]]
@@ -61,27 +47,18 @@ name = "format"
 name = "ui"
 
 [[layers]]
-name = "tools"
-
-[[layers]]
 name = "tmux"
 
 #[[layers]]
-#name = "debug"
-
-[[layers]]
-name = "lsp"
-filetypes = [
-# "python",
-    "c",
-    "cpp"
-]
-[layers.override_cmd]  
-c = ["clangd", "--limit-results=5"]  
-cpp = ["clangd", "--limit-results=5"]  
-
-#[[layers]]
-#name = "VersionControl"
+#name = "lsp"
+#filetypes = [
+#  "c",
+#  "cpp"
+#  "python",
+#]
+#[layers.override_cmd] 
+#c = ["clangd", "--limit-results=5"] 
+#cpp = ["clangd", "--limit-results=5"] 
 
 [[layers]]
 name = "git"
@@ -96,13 +73,7 @@ name = "sudo"
 name = "lang#python"
 
 #[[layers]]
-#name = "lang#matlab"
-#
-#[[layers]]
 #name = "lang#latex"
-
-#[[layers]]
-#name = "lang#markdown"
 
 [[layers]]
 name = "lang#java"

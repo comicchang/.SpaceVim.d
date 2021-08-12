@@ -89,9 +89,9 @@ function! myspacevim#after() abort
     " set guifontwide="方正兰亭圆_GBK"
     " set guifont=Source Code Pro:h12
     set linespace=2
-    set guifontset=
-    set guifont=SourceCodePro-Regular:h12
-    set guifontwide=FZLanTingYuan-R-GBK:h14
+    " set guifontset=
+    " set guifont=SourceCodePro-Regular:h12
+    " set guifontwide=FZLanTingYuan-R-GBK:h14
 
     set conceallevel=0
 

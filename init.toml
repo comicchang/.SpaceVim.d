@@ -46,17 +46,6 @@ default_height = 30
 name = "tmux"
 
 [[layers]]
-name = "lsp"
-filetypes = [
-  "c",
-  "cpp"
-  "python",
-]
-#[layers.override_cmd] 
-#c = ["clangd", "--limit-results=5"] 
-#cpp = ["clangd", "--limit-results=5"] 
-
-[[layers]]
 name = "git"
 
 [[layers]]
@@ -75,10 +64,15 @@ name = "cscope"
 # ====================================================================
 
 [[layers]]
-name = "lang#python"
+name = "lsp"
+filetypes = [
+  "c",
+  "cpp"
+  "python",
+]
 
-#[[layers]]
-#name = "lang#latex"
+[[layers]]
+name = "lang#python"
 
 #[[layers]]
 #name = "lang#java"
@@ -88,12 +82,7 @@ name = "lang#sh"
 
 [[layers]]
 name = "lang#c"
-#clang_executable = "/usr/bin/clang"
-[layer.clang_std]
-    c = "c11"
-    cpp = "c++1z"
-    objc = "c11"
-    objcpp = "c++1z"
+enable_clang_syntax_highlight = true
 
 [[layers]]
 name = "lang#toml"

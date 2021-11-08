@@ -8,6 +8,8 @@
 
 # All SpaceVim option below [option] section
 [options]
+    #autocomplete_method = "coc"
+    snippet_engine = "ultisnips"
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
@@ -26,13 +28,12 @@
     default_indent = 4
     bootstrap_before = "myspacevim#before"
     bootstrap_after= "myspacevim#after"
-    snippet_engine = "ultisnips"
     project_rooter_patterns = ['.repo/', '.git/', '_darcs/', '.hg/', '.bzr/', '.svn/']
 
 [[layers]]
-name = 'autocomplete'
-auto-completion-return-key-behavior = "smart"
-auto-completion-tab-key-behavior = "smart"
+name = "autocomplete"
+auto_completion_return_key_behavior = "smart"
+auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
 name = "chinese"
@@ -67,9 +68,12 @@ name = "cscope"
 name = "lsp"
 filetypes = [
   "c",
-  "cpp"
-  "python",
+  "cpp",
+  "python"
 ]
+[layers.override_cmd]
+c = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
+cpp = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
 
 [[layers]]
 name = "lang#python"
@@ -82,7 +86,8 @@ name = "lang#sh"
 
 [[layers]]
 name = "lang#c"
-enable_clang_syntax_highlight = true
+clang_executable = "/usr/bin/clang"
+"enable_clang_syntax_highlight = true
 
 [[layers]]
 name = "lang#toml"

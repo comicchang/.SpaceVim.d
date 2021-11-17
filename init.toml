@@ -43,11 +43,11 @@ name = 'shell'
 default_position = 'bottom'
 default_height = 30
 
-[[layers]]
-name = "tmux"
-
-[[layers]]
-name = "git"
+#[[layers]]
+#name = "tmux"
+#
+#[[layers]]
+#name = "git"
 
 [[layers]]
 name = "fzf"
@@ -88,11 +88,11 @@ name = "lang#sh"
 #name = "lang#c"
 #clang_executable = "/usr/bin/clang"
 
-[[layers]]
-name = "lang#toml"
+#[[layers]]
+#name = "lang#toml"
 
-[[layers]]
-name = "lang#vim"
+#[[layers]]
+#name = "lang#vim"
 
 # ====================================================================
 

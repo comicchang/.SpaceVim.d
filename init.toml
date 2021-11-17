@@ -38,10 +38,10 @@ auto_completion_tab_key_behavior = "smart"
 [[layers]]
 name = "chinese"
 
-[[layers]]
-name = 'shell'
-default_position = 'bottom'
-default_height = 30
+#[[layers]]
+#name = 'shell'
+#default_position = 'bottom'
+#default_height = 30
 
 [[layers]]
 name = "tmux"

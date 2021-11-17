@@ -43,11 +43,11 @@ name = 'shell'
 default_position = 'bottom'
 default_height = 30
 
-#[[layers]]
-#name = "tmux"
-#
-#[[layers]]
-#name = "git"
+[[layers]]
+name = "tmux"
+
+[[layers]]
+name = "git"
 
 [[layers]]
 name = "fzf"
@@ -64,16 +64,16 @@ name = "sudo"
 
 # ====================================================================
 
-#[[layers]]
-#name = "lsp"
-#filetypes = [
-#  "c",
-#  "cpp",
-#  "python"
-#]
-#[layers.override_cmd]
-#c = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
-#cpp = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
+[[layers]]
+name = "lsp"
+filetypes = [
+  "c",
+  "cpp",
+  "python"
+]
+[layers.override_cmd]
+c = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
+cpp = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
 
 #[[layers]]
 #name = "lang#python"
@@ -84,15 +84,15 @@ name = "sudo"
 [[layers]]
 name = "lang#sh"
 
-#[[layers]]
-#name = "lang#c"
-#clang_executable = "/usr/bin/clang"
+[[layers]]
+name = "lang#c"
+clang_executable = "/usr/bin/clang"
 
-#[[layers]]
-#name = "lang#toml"
+[[layers]]
+name = "lang#toml"
 
-#[[layers]]
-#name = "lang#vim"
+[[layers]]
+name = "lang#vim"
 
 # ====================================================================
 
@@ -104,7 +104,8 @@ merged = false
 name="junegunn/vim-easy-align"
 merged = false
 
-#[[custom_plugins]]
-#repo = "rhysd/vim-clang-format"
-#merged = false
+[[custom_plugins]]
+repo = "rhysd/vim-clang-format"
+merged = false
+on_ft = ["c", "cpp"]
 

@@ -55,28 +55,28 @@ name = "fzf"
 [[layers]]
 name = "sudo"
 
-[[layers]]
-name = "gtags"
-gtagslabel = "pygments"
-
-[[layers]]
-name = "cscope"
+#[[layers]]
+#name = "gtags"
+#gtagslabel = "pygments"
+#
+#[[layers]]
+#name = "cscope"
 
 # ====================================================================
 
-[[layers]]
-name = "lsp"
-filetypes = [
-  "c",
-  "cpp",
-  "python"
-]
-[layers.override_cmd]
-c = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
-cpp = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
+#[[layers]]
+#name = "lsp"
+#filetypes = [
+#  "c",
+#  "cpp",
+#  "python"
+#]
+#[layers.override_cmd]
+#c = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
+#cpp = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
 
-[[layers]]
-name = "lang#python"
+#[[layers]]
+#name = "lang#python"
 
 #[[layers]]
 #name = "lang#java"
@@ -84,10 +84,9 @@ name = "lang#python"
 [[layers]]
 name = "lang#sh"
 
-[[layers]]
-name = "lang#c"
-clang_executable = "/usr/bin/clang"
-"enable_clang_syntax_highlight = true
+#[[layers]]
+#name = "lang#c"
+#clang_executable = "/usr/bin/clang"
 
 [[layers]]
 name = "lang#toml"
@@ -105,7 +104,7 @@ merged = false
 name="junegunn/vim-easy-align"
 merged = false
 
-[[custom_plugins]]
-repo = "rhysd/vim-clang-format"
-merged = false
+#[[custom_plugins]]
+#repo = "rhysd/vim-clang-format"
+#merged = false
 

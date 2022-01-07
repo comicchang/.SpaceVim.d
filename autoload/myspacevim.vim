@@ -68,10 +68,10 @@ function! myspacevim#before() abort
     "            \}
     set foldlevelstart=20
 
-    let g:SPACEVIM_SERVER_ADDRESS='VIM'
-    if empty(v:servername) && exists('*remote_startserver')
-        call remote_startserver('/tmp/nvimsocket')
-    endif
+    "let g:SPACEVIM_SERVER_ADDRESS='VIM'
+    "if empty(v:servername) && exists('*remote_startserver')
+    "    call remote_startserver('/tmp/nvimsocket')
+    "endif
 
     augroup CrisiParentheses
         autocmd FileType markdown,tex setlocal wrap

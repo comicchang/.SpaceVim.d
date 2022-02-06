@@ -78,6 +78,9 @@ cpp = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", 
 #[[layers]]
 #name = "lang#python"
 
+[[layers]]
+name = "lang#rust"
+
 #[[layers]]
 #name = "lang#java"
 

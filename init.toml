@@ -71,6 +71,7 @@ filetypes = [
   "cpp",
   "python"
 ]
+enabled_clients = ['clangd', 'vimls', 'pyright']
 [layers.override_cmd]
 c = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
 cpp = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]

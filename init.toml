@@ -38,9 +38,9 @@ auto_completion_tab_key_behavior = "smart"
 [[layers]]
 name = "chinese"
 
-#[[layers]]
-#name = 'shell'
-#default_position = 'bottom'
+[[layers]]
+name = 'shell'
+default_position = 'bottom'
 #default_height = 30
 
 [[layers]]
@@ -79,8 +79,8 @@ name = "sudo"
 #[[layers]]
 #name = "lang#python"
 
-[[layers]]
-name = "lang#rust"
+#[[layers]]
+#name = "lang#rust"
 
 #[[layers]]
 #name = "lang#java"
@@ -88,9 +88,9 @@ name = "lang#rust"
 [[layers]]
 name = "lang#sh"
 
-[[layers]]
-name = "lang#c"
-clang_executable = "/usr/bin/clang"
+#[[layers]]
+#name = "lang#c"
+#clang_executable = "/usr/bin/clang"
 
 [[layers]]
 name = "lang#toml"
@@ -113,3 +113,6 @@ repo = "rhysd/vim-clang-format"
 merged = false
 on_ft = ["c", "cpp"]
 
+#[[custom_plugins]]
+#name="akinsho/toggleterm.nvim"
+#merged = false

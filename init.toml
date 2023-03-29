@@ -31,14 +31,6 @@
     project_rooter_patterns = ['.repo/', '.git/', '_darcs/', '.hg/', '.bzr/', '.svn/']
 
 [[layers]]
-name = "autocomplete"
-auto_completion_return_key_behavior = "smart"
-auto_completion_tab_key_behavior = "smart"
-
-[[layers]]
-name = "chinese"
-
-[[layers]]
 name = 'shell'
 default_position = 'bottom'
 #default_height = 30
@@ -55,42 +47,8 @@ name = "fzf"
 [[layers]]
 name = "sudo"
 
-#[[layers]]
-#name = "gtags"
-#gtagslabel = "pygments"
-#
-#[[layers]]
-#name = "cscope"
-
-# ====================================================================
-
-#[[layers]]
-#name = "lsp"
-#filetypes = [
-#  "c",
-#  "cpp",
-#  "python"
-#]
-#enabled_clients = ['clangd', 'vimls', 'pyright']
-#[layers.override_cmd]
-#c = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
-#cpp = ["clangd", "-j=12", "--all-scopes-completion", "--background-index=true", "--completion-style=detailed", "--cross-file-rename", "--function-arg-placeholders", "--header-insertion=never", "--pch-storage=disk"]
-
-#[[layers]]
-#name = "lang#python"
-
-#[[layers]]
-#name = "lang#rust"
-
-#[[layers]]
-#name = "lang#java"
-
 [[layers]]
 name = "lang#sh"
-
-#[[layers]]
-#name = "lang#c"
-#clang_executable = "/usr/bin/clang"
 
 [[layers]]
 name = "lang#toml"
@@ -107,12 +65,3 @@ merged = false
 [[custom_plugins]]
 name="junegunn/vim-easy-align"
 merged = false
-
-[[custom_plugins]]
-repo = "rhysd/vim-clang-format"
-merged = false
-on_ft = ["c", "cpp"]
-
-#[[custom_plugins]]
-#name="akinsho/toggleterm.nvim"
-#merged = false
